@@ -1,8 +1,8 @@
-[[main]]
-    identifier = "home"
-    name = "Home"
-    url = "/"
-    weight = 1
+# [[main]]
+#     identifier = "home"
+#     name = "Home"
+#     url = "/"
+#     weight = 1
 
 # [[main]]
 #     identifier = "donate"
@@ -14,4 +14,10 @@
     identifier = "github"
     name = "GitHub"
     url = "https://github.com/maartenpeels"
+    weight = 3
+
+[[social]]
+    identifier = "linkedin"
+    name = "LinkedIn"
+    url = "https://www.linkedin.com/in/peelsmaarten/"
     weight = 3
