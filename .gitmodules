@@ -4,3 +4,6 @@
 [submodule "themes/lowkey"]
 	path = themes/lowkey
 	url = https://github.com/nixentric/Lowkey-Hugo-Theme.git
+[submodule "themes/lowkey_fork"]
+	path = themes/lowkey_fork
+	url = https://github.com/maartenpeels/Lowkey-Hugo-Theme.git
