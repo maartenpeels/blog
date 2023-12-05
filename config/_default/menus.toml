@@ -4,14 +4,12 @@
     url = "/"
     weight = 1
 
-[[main]]
-    identifier = "donate"
-    name = "Donate"
-    url = "https://ko-fi.com/maartenpeels"
-    weight = 5
+# [[main]]
+#     identifier = "donate"
+#     name = "Donate"
+#     url = "https://ko-fi.com/maartenpeels"
+#     weight = 5
     
-# Social Media Configuration
-
 [[social]]
     identifier = "github"
     name = "GitHub"
