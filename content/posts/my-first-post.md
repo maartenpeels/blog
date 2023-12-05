@@ -4,8 +4,6 @@ date: 2023-12-05T10:50:30+01:00
 draft: false
 ---
 
-# Welcome to my tech blog!
-
 Hello there, developers and tech enthusiasts! 👋
 
 This blog is your hub for exploring the dynamic world of development tools and software. As a fellow developer, I'm passionate about sharing my discoveries and experiences to make your coding journey more enjoyable and efficient.
