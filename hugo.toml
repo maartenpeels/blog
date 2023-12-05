@@ -1,0 +1,4 @@
+baseURL = 'https://maartenpeels.com/'
+languageCode = 'en-us'
+title = 'maartenpeels.com'
+theme = 'hello-friend-ng'
