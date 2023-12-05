@@ -1,5 +1,5 @@
 ---
-title: "Create and Host a Blog with Hugo for Free"
+title: "Building a Hugo Blog with Lowkey Theme: Host on GitHub Pages for Free"
 date: 2023-12-05T14:38:16+01:00
 draft: false
 ---
