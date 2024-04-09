@@ -34,7 +34,7 @@ sudo apt install avahi-daemon
 Since we can now SSH into the VM, the display becomes unnecessary. Remove the display by going to the VM settings in UTM, right-clicking on `Display`, and selecting `Remove`.
 
 ### VSCode Remote SSH
-If you're using JetBrains IDEs, you can also consider setting up Remote Toolchains.
+If you're using JetBrains IDEs, you can also consider using the `Remote Development` feature.
 
 - Install the `remote SSH` plugin by Microsoft.
 - Open the command palette with `Cmd-Shift-P`, run `Remote-SSH: Add New SSH Host…`, and enter your SSH command, e.g., `ssh user@hostname.local`.
