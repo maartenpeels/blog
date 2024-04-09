@@ -8,9 +8,9 @@ draft: false
 For some projects I need to build and run on Linux because the code is not compatible with MacOS. To do this I've used VM's in the past, but there are some downsides to this:
 - Speed
 - Rendering / Resolution
-- Having 2 differen UI's (MacOS / Ubuntu)
+- Having 2 different UI's (MacOS / Ubuntu)
 
-This guide aims to solve these issues by setting up a Linux VM without a display and using the VSCode remote-SSH plugin. This plugin allows for, as the name implies, remote development over SSH. This means that all the files we see in VSCode are stored on the filesystem of the VM but also the terminal is connected to the VM.
+This guide aims to solve these issues by setting up a Linux VM without a display and using the VSCode remote-SSH plugin. This plugin allows for, as the name implies, remote development. When first connecting it will automatically install VSCode Server.
 
 ### Prerequisites
 - Download and install UTM. You can find it [here](https://mac.getutm.app/).
