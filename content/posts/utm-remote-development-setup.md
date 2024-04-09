@@ -4,40 +4,40 @@ date: 2024-04-09T10:39:11+02:00
 draft: false
 ---
 
-## Overview
-For some projects I need to build and run on Linux because the code is not compatible with MacOS. To do this I've used VM's in the past, but there are some downsides to this:
-- Speed
-- Rendering / Resolution
-- Having 2 different UI's (MacOS / Ubuntu)
+# Simplifying Linux Development on MacOS
+In certain projects, you might find yourself needing to work with Linux due to compatibility issues that MacOS can't handle. While using virtual machines (VMs) has been a common workaround, it comes with its own set of challenges such as speed limitations, display problems, and the inconvenience of switching between MacOS and Ubuntu interfaces.
 
-This guide aims to solve these issues by setting up a Linux VM without a display and using the VSCode remote-SSH plugin. This plugin allows for, as the name implies, remote development. When first connecting it will automatically install VSCode Server.
+This guide aims to address these issues by setting up a Linux VM without a display and using the VSCode remote-SSH plugin for smooth remote development.
 
-### Prerequisites
-- Download and install UTM. You can find it [here](https://mac.getutm.app/).
-- Download an Ubuntu server ISO build for ARM [here](https://ubuntu.com/download/server/arm).
+## Prerequisites
+Before getting started, make sure you have:
 
-## Steps
+- **UTM**: Download and install UTM from [here](https://mac.getutm.app/).
+- **Ubuntu Server ISO for ARM**: Get the Ubuntu server ISO build for ARM from [here](https://ubuntu.com/download/server/arm).
 
-### Setup VM
-I basically followed the guide for setting up a Ubuntu VM within UTM. You can find this guide [here](https://docs.getutm.app/guides/ubuntu/). The only change I've made is that I gave it 8GB of RAM.
+## Step-by-Step Guide
 
-### Boot the VM
-When booting for the first time select `Install or Try Ubuntu`. Follow the steps to install Ubuntu.
+### Setting Up the VM
+Start by following the instructions provided in the guide for configuring a Ubuntu VM within UTM, available [here](https://docs.getutm.app/guides/ubuntu/). I allocated 8GB of RAM during setup.
 
-- During the installation steps make sure to enable `OpenSSH Server`.
-- Eject the ISO before rebooting.
+### Booting the VM
+When you boot the VM for the first time, choose the Install or Try Ubuntu option and proceed with the installation steps. Make sure to enable OpenSSH Server during setup and eject the ISO before rebooting.
 
 ### Setup Rendezvous
-To be able to more easily SSH into the VM we can install the `avahi-daemon`. Doing this allows `ssh hostame.local`
+To simplify SSH access to the VM, install the `avahi-daemon`, which enables the use of `ssh hostname.local`:
 
-- `sudo apt install avahi-daemon`
+```bash
+sudo apt install avahi-daemon
+```
 
-### Remove Display
-Now we are able to SSH into the VM we do not need a display anymore. We can remove the display by going to the VM settings in UTM and right clicking the `Display` and selecting `Remove`.
+### Removing the Display
+Since we can now SSH into the VM, the display becomes unnecessary. Remove the display by going to the VM settings in UTM, right-clicking on `Display`, and selecting `Remove`.
 
 ### VSCode Remote SSH
-Note: There is also an option to setup `Remote Toolchains` in JetBrains IDE's if you are using that.
+If you're using JetBrains IDEs, you can also consider setting up Remote Toolchains.
 
 - Install the `remote SSH` plugin by Microsoft.
-- Press `Cmd-Shift-P` to open the command pallete, run `Remote-SSH: Add New SSH Host…` and enter your ssh command, e.g: `ssh user@hostname.local`
-- In the bottom left of VSCode there is a blue rectangle with 2 arrows in it, when you click this you can select `Connect to Host...`. Here you will be able to select the host that we just added.
+- Open the command palette with `Cmd-Shift-P`, run `Remote-SSH: Add New SSH Host…`, and enter your SSH command, e.g., `ssh user@hostname.local`.
+- In the bottom left corner of VSCode, click on the blue rectangle with two arrows to access `Connect to Host...`, where you can select the recently added host for seamless remote development.
+
+By following these steps, you can improve your development workflow by seamlessly integrating Linux development into MacOS, effectively overcoming compatibility challenges.
